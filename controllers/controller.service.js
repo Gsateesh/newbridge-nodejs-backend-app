@@ -1,6 +1,5 @@
 const nodemailer = require('nodemailer');
 const ServiceModel = require('../models/model.service');
-const sendEmail = require('../services/sendemail');
 const addService = async (request, response) => {
     let incomingService = {
         firstName: request.body.firstName,
