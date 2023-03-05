@@ -1,11 +1,12 @@
 const mongoose = require('mongoose');
 const express = require('express');
 const bodyParser = require('body-parser');
-const cors = require('cors');
+
 
 const app = express();
-app.use(cors());
-app.use(bodyParser.json());
+const cors = require('cors');
+
+
 
 
 mongoose.connect("mongodb+srv://salesteamnewbridge:mseWtJrXdhhd53U4@cluster0.elwm8de.mongodb.net/service-requests");
@@ -13,7 +14,8 @@ mongoose.connect("mongodb+srv://salesteamnewbridge:mseWtJrXdhhd53U4@cluster0.elw
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
-
+app.use(cors());
+app.use(bodyParser.json());
 
 
 const service = require('./routes/routes.service');
