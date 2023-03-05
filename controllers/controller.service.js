@@ -46,7 +46,7 @@ const addService = async (request, response) => {
                 </tr>
                 <tr>
                     <td>Requested On</td>
-                    <td>${request.body.createdOn}</td>
+                    <td>${(new Date())}</td>
                 </tr>
                 </table>
 
