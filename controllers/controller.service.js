@@ -67,7 +67,7 @@ const addService = async (request, response) => {
                 if (error) {
                     response.status(500).json(
                         {
-                            message: 'Something went wrong.'
+                            message: 'Email sent failed.'
                         }
                     )
                 } else {
@@ -91,7 +91,7 @@ const addService = async (request, response) => {
             console.log("error", error);
             response.status(500).json(
                 {
-                    message: 'Something went wrong. Please try again later.'
+                    message: 'Failed to save contact form details.'
                 }
             )
         }
