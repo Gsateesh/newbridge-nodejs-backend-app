@@ -18,8 +18,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-// const service = require('./routes/routes.service');
-// app.use('/service', service);
+const service = require('./routes/routes.service');
+app.use('/service', service);
 
 
 app.get("/", (req, res) => {

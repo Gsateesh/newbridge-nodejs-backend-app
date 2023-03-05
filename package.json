@@ -2,7 +2,7 @@
   "name": "newbridge-nodejs-backend-app",
   "version": "1.0.0",
   "description": "This is a newbridge backend application",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified.\"",
     "start": "node app.js"
