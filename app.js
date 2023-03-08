@@ -8,7 +8,7 @@ const cors = require('cors');
 
 
 
-
+// connection
 mongoose.connect("mongodb+srv://salesteamnewbridge:mseWtJrXdhhd53U4@cluster0.elwm8de.mongodb.net/service-requests");
 
 var db = mongoose.connection;
